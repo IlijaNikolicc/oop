@@ -3,7 +3,7 @@ package geometrija._3D;
 import geometrija.*;
 import geometrija._2D.*;
 
-public class TrostranaPiramida extends GeometrijskoTelo {
+public class TrostranaPiramida extends GeometrijskoTelo implements ITeloSaBazom {
 		
 	private GeometrijskaFigura baza;
 	Tacka vrhPiramide;
@@ -44,9 +44,9 @@ public class TrostranaPiramida extends GeometrijskoTelo {
 		return baza.dajObim();
 	}
 	
-	public void dajBazu()
+	public GeometrijskiOblik dajBazu()
 	{
-		baza.toString();
+		return baza;
 	}
 	
 	

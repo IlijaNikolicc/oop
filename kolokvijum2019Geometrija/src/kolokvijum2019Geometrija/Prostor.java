@@ -2,6 +2,8 @@ package kolokvijum2019Geometrija;
 
 import geometrija.GeometrijskiOblik;
 import geometrija._3D.GeometrijskoTelo;
+import geometrija._3D.ITeloSaBazom;
+import geometrija._3D.TrostranaPiramida;
 
 public class Prostor {
 	
@@ -50,7 +52,7 @@ public class Prostor {
 		double zapremina = 0.0;
 		for(GeometrijskiOblik geometrijskiOblik : geometrijskiOblici)
 		{
-			if(geometrijskiOblik instanceof GeometrijskoTelo)
+			if(geometrijskiOblik instanceof ITeloSaBazom)
 				zapremina += ((GeometrijskoTelo)geometrijskiOblik).dajZapreminu();
 		}
 		return zapremina;
