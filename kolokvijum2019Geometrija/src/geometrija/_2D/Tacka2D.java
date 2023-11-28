@@ -6,7 +6,8 @@ import java.lang.Math;
 
 public class Tacka2D extends Tacka{
 	
-	private double x,y;
+	private double x;
+	private double y;
 	
 	public Tacka2D(double x, double y)
 	{
