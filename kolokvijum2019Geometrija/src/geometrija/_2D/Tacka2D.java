@@ -18,7 +18,7 @@ public class Tacka2D extends Tacka{
 	@Override
 	public double rastojanje(Tacka t) throws TackeNisuUIstojDimenziji 
 	{
-		if(this instanceof Tacka)
+		if(this instanceof Tacka2D)
 			return this.rastojanje(((Tacka2D)t).x,((Tacka2D)t).y);
 		else
 			throw new TackeNisuUIstojDimenziji(this, t);
